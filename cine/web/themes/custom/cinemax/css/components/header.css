@@ -1,0 +1,84 @@
+header {
+  font-size: 0.8em;
+  width: 100%;
+  height: 100px;
+  background-color: #333333;
+  z-index: 99;
+  text-transform: uppercase;
+}
+
+/* --------------- Header Grid ------------- */
+.header {
+  width: 100%;
+  display: inline-flex;
+  column-gap: 10px;
+  position: relative;
+}
+
+.header-01{
+  width: 200px;
+  height: 100px;
+}
+
+.header-02{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ------------------ Logo ---------------- */
+.site-branding {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 1025px) {
+  
+  header, 
+  .header {
+    height: 100px;
+  }
+
+  .header {
+    grid-template-columns: 170px auto 100px 80px;
+  }
+
+}
+
+/*Mobile and Tablet*/
+@media screen and (max-width: 1024px) {
+  
+  header, 
+  .header {
+    height: 120px;
+  }
+
+  .header {
+    grid-template-columns: 170px auto;
+  }
+
+  .header .item:nth-child(2),
+  .header .item:nth-child(3) {
+    display: none;
+  }
+
+}
+
+.brand {
+  display: flex;
+  height: 100%;
+  max-width: 160px;
+  align-items: center;
+  position: absolute;
+}
+
+.brand img{
+  min-width: 160px;
+  height: auto;
+}

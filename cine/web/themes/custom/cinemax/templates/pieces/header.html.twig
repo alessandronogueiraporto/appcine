@@ -1,0 +1,41 @@
+{% if is_front %}
+
+  {%
+    set classes = [
+      'front',
+      'no-print',
+      'header-off',
+    ]
+  %}
+
+  {% set headerID  = "id=header" %}
+
+{% elseif not is_front %}
+
+  {%
+    set classes = [
+      'page',
+      'no-print',
+    ]
+  %}
+
+  {% set headerID  = "id=header" %}
+
+{% endif %}
+
+<header {{ headerID }} {{ attributes.addClass(classes) }}>
+  <div class="layout-container">
+    <div class="header">
+      <div class="header-01">{{ page.brand }}</div>
+      <div class="header-02">{{ page.search }}</div>
+    </div>
+  </div>
+  
+    
+</header>
+
+<div class="main-menu">
+  <div class="layout-container">
+    {{ page.mainmenu }}
+  </div>
+</div>

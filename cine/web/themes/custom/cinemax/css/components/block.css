@@ -1,0 +1,7 @@
+/**
+ * @file
+ * Visual styles for Cinemax's blocks.
+ */
+
+/* Block has its own content wrapper. */
+.block .content {}

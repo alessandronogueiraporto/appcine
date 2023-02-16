@@ -1,0 +1,45 @@
+/**
+ * @file
+ * Styles for menus in Cinemax.
+ */
+
+
+.main-menu{
+  width: 100%;
+  height: 70px;
+  background-color: #666666;
+}
+
+.main-menu .layout-container,
+.main-menu .layout-container nav {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+.main-menu ul {
+    width:100%;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.main-menu li {
+    display: inline-block;
+    list-style:none;
+}
+
+.main-menu li a {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    border: none;
+    -webkit-transition: border-bottom .3s linear;
+    align-items: center;
+}
+
+/* This is needed to override [dir="rtl"] ul.menu styles in menu.theme.css */
+[dir="rtl"] .main-menu ul.menu {
+  margin: 0;
+}

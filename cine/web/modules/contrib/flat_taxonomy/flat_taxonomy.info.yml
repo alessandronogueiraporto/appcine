@@ -1,0 +1,11 @@
+type: module
+name: Flat Taxonomy
+description: "Provides tools to force selected taxonomies to be flat."
+package: Taxonomy
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+# Information added by Drupal.org packaging script on 2020-05-28
+version: '8.x-1.2'
+project: 'flat_taxonomy'
+datestamp: 1590677907

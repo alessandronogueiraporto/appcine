@@ -1,0 +1,14 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Cinemax's theme implementation for a branding block.
+#}
+
+{% block content %}
+  {% if site_logo %}
+    <a href="{{ path('<front>') }}" rel="home" class="brand">
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+  {% endif %}
+{% endblock %}

@@ -1,1 +1,11 @@
-# appcine
+## Run apliccation
+- Clone repository
+- Open the CMD terminal in the "cine" project folder.
+- Run the command lando start
+- At the end of the process, take the suggested URL and open it in your browser
+- Drupal installation should begin
+- Install Drupal normally
+- At the end of the process the site will be ready
+- At the end of the process, the site will be ready to use.
+- At this time use backup migrate to perform the import - Not ideal
+- Use the cinema website

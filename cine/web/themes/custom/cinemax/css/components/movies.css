@@ -1,0 +1,35 @@
+.movies {
+  display: flex;
+  column-gap: 70px;
+}
+
+.movies h1 {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.movies .column-01 {
+  width: 320px;
+}
+
+.movies .column-02 {
+  width:calc(100% - 460px);
+}
+
+.movies .column-01 img{
+  float: left;
+}
+
+.movies .label{
+  font-weight: bold;
+}
+
+.line-01 {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.line-02 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

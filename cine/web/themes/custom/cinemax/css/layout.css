@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Cinemax layout styling.
+ */
+
+/**
+ * Container
+ */
+
+main{
+  margin-top:40px;
+  margin-bottom: 40px;
+}
+
+.layout-container {
+  box-sizing: border-box;
+  max-width: 860px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media all and (min-width: 851px) {
+  .layout-container {
+    max-width: 1290px;
+  }
+}
+
+/**
+ * Main
+ */
+.layout-main-wrapper {
+  min-height: 300px;
+}
